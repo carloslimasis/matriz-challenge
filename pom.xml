@@ -13,9 +13,6 @@
 		</dependency>
 	</dependencies>
 
-
-
-
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
 		<plugins>
