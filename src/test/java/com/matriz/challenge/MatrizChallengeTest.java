@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class MatrizChallengeTest {
 
-	protected FileReader entries;
+	protected FileReader inputs;
 	protected MatrizChallenge challenge;
 
 	private GivenSteps given;
@@ -25,15 +25,15 @@ public class MatrizChallengeTest {
 	
 	@Test
 	public void test() throws Exception {
-		given.iHaveTheEntries();
+		given.iHaveTheInputs();
 		String[][] matriz = when.iExecuteChallenge();
 		then.theResultShouldBe(matriz, "Azul");
 	}
 
 	class GivenSteps {
-		void iHaveTheEntries() throws Exception {
-			entries = new FileReader(new File("src/main/resources/entries"));
-			challenge = MatrizChallenge.challenge(entries);
+		void iHaveTheInputs() throws Exception {
+			inputs = new FileReader(new File("src/main/resources/inputs"));
+			challenge = MatrizChallenge.challenge(inputs);
 		}
 	}
 
