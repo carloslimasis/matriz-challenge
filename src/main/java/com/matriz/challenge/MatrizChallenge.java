@@ -23,19 +23,19 @@ public class MatrizChallenge {
 		final BufferedReader br = new BufferedReader(reader);
 		
 		String line = br.readLine();
-		String[] first_entry = line.split(" ");
+		String[] first_input = line.split(" ");
 		
-		int rows = parseInt(first_entry[0]);
-		int columns = parseInt(first_entry[1]);
+		int rows = parseInt(first_input[0]);
+		int columns = parseInt(first_input[1]);
 		
 		String [][] colors = MatrizGenerator.matriz(rows, columns).create();
 		
 		line = br.readLine();
-		String[] second_entry = line.split(" ");
+		String[] second_input = line.split(" ");
 		
-		int rowToPut = parseInt(second_entry[0]) - 1;
-		int columnToPut = parseInt(second_entry[1]) - 1;
-		String color = second_entry[2];
+		int rowToPut = parseInt(second_input[0]) - 1;
+		int columnToPut = parseInt(second_input[1]) - 1;
+		String color = second_input[2];
 		
 		MatrizHelper.matrizHelper(colors).put(rowToPut, columnToPut, color);
 		
