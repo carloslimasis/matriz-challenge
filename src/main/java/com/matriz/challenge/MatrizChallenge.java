@@ -3,7 +3,6 @@ package com.matriz.challenge;
 import static java.lang.Integer.parseInt;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -42,18 +41,4 @@ public class MatrizChallenge {
 		
 		return colors;
 	}
-	
-	
-	
-	public static void main(String[] args) throws IOException {
-		final FileReader reader = new FileReader(new File("src/main/resources/entries"));
-		String[][] colors = MatrizChallenge.challenge(reader).execute();
-	
-		for (int row = 0; row < colors.length; row++) {
-			for (int column = 0; column < colors[row].length; column++) {
-				System.out.println("Row: " + row + " Column: " + column + " = " + colors[row][column]);
-			}
-		}
-	}
-	
 }
