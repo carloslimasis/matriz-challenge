@@ -10,5 +10,5 @@ mvn clean compile test package
 
 2. Execute the following command in terminal:
 ```bash
-java -jar target/matriz-challange-0.0.1-SNAPSHOT.jar
+java -jar target/matriz-challenge-0.0.1-SNAPSHOT.jar
 ```
